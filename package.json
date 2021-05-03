@@ -2,6 +2,7 @@
   "name": "react-modern-whiteboard",
   "version": "0.1.0",
   "private": true,
+  "author": "Vishv Kakadiya",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -9,6 +10,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "immutable": "^3.8.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
