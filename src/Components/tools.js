@@ -52,6 +52,7 @@ export default class Tools extends React.Component {
 
 	updateState = (ID) => {
 		const tools = this.state.tools.map(tool => ({ ...tool, selected: ID === tool.id }))
+		EventBus.emit(EventBus.TOOL_CHANGE, ID);
 		this.setState({ tools });
 	}
 
@@ -66,7 +67,7 @@ export default class Tools extends React.Component {
 			key={i}
 			onClick={this.handleClick(i).bind(this)}
 			className={tool.selected ? 'selected' : ''}
-		><i className={tool.label + ' fa'}></i></div>)
+		><i className={tool.label + ' fa fa-lg'}></i></div>)
 		return (<div id="tools" style={{marginLeft:"35px",marginTop:"35px",backgroundColor:"white"}}>
 			{tools}
 			{/* <ColorPicker /> */}
