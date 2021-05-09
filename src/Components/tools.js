@@ -17,9 +17,44 @@ export default class Tools extends React.Component {
 		};
 		ToolStore.subscribe(() => {
 			const tools = this.state.tools.map(tool => ({ ...tool, selected: ToolStore.tool === tool.id }))
+			console.log(tools);
 			this.setState({ tools })
-		})
+		});
 	}
+
+	componentDidMount(){
+			
+		document.addEventListener("keydown", this.HandleShortCuts, false);
+	}
+
+	HandleShortCuts = (e) => {
+		
+			switch (e.keyCode) {
+				case 65:
+					this.updateState(POINTER);
+					break;
+				case 76:
+					this.updateState(LINE);
+					break;
+				case 82:
+					this.updateState(RECT);
+					break;
+				case 67:
+					this.updateState(ELLIPSE);
+					break;
+				case 80:
+					this.updateState(PEN);
+					break;
+				default:
+					break;
+			}
+	}
+
+	updateState = (ID) => {
+		const tools = this.state.tools.map(tool => ({ ...tool, selected: ID === tool.id }))
+		this.setState({ tools });
+	}
+
 	handleClick(index) {
 		return function () {
 			EventBus.emit(EventBus.TOOL_CHANGE, this.state.tools[index].id);

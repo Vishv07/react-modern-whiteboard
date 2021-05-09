@@ -32,6 +32,7 @@ code {
 #tools {
 	display: block;
 	position: fixed;
+	top: 30%;
 }
 
 #tools>div {
