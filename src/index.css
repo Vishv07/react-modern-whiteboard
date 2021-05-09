@@ -33,11 +33,13 @@ code {
 	display: block;
 	position: fixed;
 	top: 30%;
+	padding: 1px;
+	border-radius: 10px;
 }
 
 #tools>div {
 	width: 36px;
-	padding: 8px;
+	padding: 12px;
 	font-size: 30;
 	justify-content: center;
 	display: flex;
@@ -45,9 +47,9 @@ code {
 	align-items: center;
 }
 
+
 #tools>div.selected {
-	background-color: black;
-	color: white;
+	color: blue;
 }
 
 #history {
