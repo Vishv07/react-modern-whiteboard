@@ -38,7 +38,7 @@ export function getShapeRect(shape) {
 }
 
 export const colors = [
-  "##FFF",
+  "#FFFFF",
   "#DB3E00",
   "#FCCB00",
   "#008B02",
