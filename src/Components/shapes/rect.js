@@ -22,7 +22,7 @@ export default class Rect extends React.Component {
 				width = {rect.width}
 				height = {rect.height}
 				stroke={this.props.color}
-		        strokeWidth={1}
+		        strokeWidth={1.5}
 		        fill="none"
 		      />);
 	}

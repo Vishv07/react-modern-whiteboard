@@ -5,6 +5,7 @@ export const PEN ='Pen'
 export const LINE ='Line'
 export const ELLIPSE = 'Elipse'
 export const RECT = 'Rect'
+export const COLOR = 'Color'
 
 class ToolStore{
 

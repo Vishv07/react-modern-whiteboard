@@ -20,7 +20,7 @@ export default class Pen extends React.Component {
 		let d = this.prepareData();
 		return (<path d={d}
 		        stroke={this.props.color}
-		        strokeWidth={1}
+		        strokeWidth={1.5}
 		        fill="none"
 		      />);
 	}

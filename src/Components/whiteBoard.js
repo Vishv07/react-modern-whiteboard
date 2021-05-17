@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import React from 'react';
 import EventBus from '../EventBus/eventBus';
 import Store from '../EventBus/store';

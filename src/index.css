@@ -3,6 +3,20 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	 /* Prevent document pinch-zoom & touch-hold-to-highlight */
+	 touch-action: none;
+
+	 -webkit-touch-callout: none;
+	 /* iOS Safari */
+	 -webkit-user-select: none;
+	 /* Safari */
+	 -khtml-user-select: none;
+	 /* Konqueror HTML */
+	 -moz-user-select: none;
+	 /* Old versions of Firefox */
+	 -ms-user-select: none;
+	 /* Internet Explorer/Edge */
+	 user-select: none;
 }
 
 code {
@@ -49,7 +63,7 @@ code {
 
 
 #tools>div.selected {
-	color: blue;
+	color: #38ACDE;
 }
 
 #history {
@@ -71,6 +85,10 @@ code {
 	color: white;
 }
 
+.arrow{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
 #selection {
 	cursor: all-scroll;
 	fill: aliceblue;
